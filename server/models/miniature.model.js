@@ -33,7 +33,6 @@ const MiniatureSchema = new mongoose.Schema (
       required: [true, "Legends status required"],
       default: false
     },
-    users: [{ type: Schema.Types.ObjectId, ref: 'User'}],
     factions: [{ type: Schema.Types.ObjectId, ref: 'Faction'}]
   }, {timestamps: true}
 )

@@ -7,7 +7,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 async function dbConnect() {
   try {
     await connect(MONGODB_URI, {
-      dbName: 'soloProjectDB',
+      dbName: 'armoryDB',
     })
     console.log("Pinged your deployment. Yous succesfully connected to MongoDB!");
   }

@@ -14,8 +14,7 @@ const FactionSchema = new mongoose.Schema(
       required: [true, "Allegiance required"],
       enum: ['Space Marines','Imperium', 'Chaos', 'Xenos']
     },
-    users: [{ type: Schema.Types.ObjectId, ref: 'User'}],
-    miniatures: [{type: Schema.Types.ObjectId, ref: 'Miniature'}]
+    miniatures: [{type: mongoose.Schema.Types.ObjectId, ref: 'Miniature'}]
   }, {timestamps: true}
 )
 

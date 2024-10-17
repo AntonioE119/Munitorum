@@ -1,0 +1,279 @@
+/* Heading Font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+/* Body Font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=IM+Fell+Great+Primer:ital@0;1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel Decorative';
+}
+
+
+/* NAVBAR STYLING */
+.top-nav {
+    display: flex;
+    background-color: #242424;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.top-nav__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Cinzel Decorative';
+    letter-spacing: 0.10em;
+}
+
+.logo {
+    width: 7em;
+}
+
+.links-wrapper {
+    display: flex; /* Ensures flex behavior */
+    align-items: center; /* Center vertically */
+}
+
+/* GLOBAL PAGE BODY STYLING */
+.main-body__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    gap: 1em;
+}
+
+.main-body__content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10em;
+    padding-right: 10em;
+    gap: 2em;
+    padding-bottom: 5em;
+}
+
+/* HOMEPAGE STYLING */
+.homepage-body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+}
+
+.homepage-lede {
+    font-family: 'Cinzel';
+    width: 50ch;;
+}
+
+
+
+/* FACTIONS PAGE STYLING */
+
+.faction-banner {
+    width: 20em;
+}
+
+.faction-banner__heading {
+    font-family: 'Cinzel Decorative';
+}
+
+.body-text {
+    font-family: 'Cinzel';
+}
+
+.faction-cards__wrapper {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.faction-card__title {
+    font-family: 'Cinzel Decorative';
+}
+
+/* FACTION CARD STYLING */
+.faction-card {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.faction-img {
+    width: 10em;
+    align-self: center;
+}
+
+.faction-card__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+
+/* FACTION FORM STYLING */
+
+.main-body__footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.faction-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 2em 1em;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: sticky;
+    top: 0;
+}
+
+.faction-form__heading {
+    font-family: 'Cinzel Decorative';
+}
+
+.faction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Cinzel';
+}
+
+/* DISPLAY ONE FACTION STYLING */
+.faction-details__wrapper {
+    padding-left: 5em;
+    padding-right: 5em;
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+}
+
+.faction-details__heading {
+    /* font-family: 'Cinzel'; */
+    font-weight: 600;
+}
+
+.faction-table__wrapper {
+    flex-grow: 2;
+}
+
+.faction-info__wrapper {
+    flex-grow: 1;
+    border: 1px solid lightgray;
+    max-height: fit-content;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: sticky;
+    top: 0;
+}
+
+.thead {
+    background-color: #242424;
+}
+
+.faction-button__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.faction-button {
+    width: fit-content;
+}
+
+/* ADD & UPDATE UNIT FORM STYLING */
+
+.add-unit__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+.unit-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 2em 2em;
+    font-family: 'Cinzel';
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.unit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.check-wrapper {
+    display: flex;
+    gap: 1em;
+}
+
+/* UNIT DETAILS PAGE STYLING */
+
+.details-body__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    gap: 2em;
+}
+
+.unit-details__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unit-details__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 2em 2em;
+    font-family: 'Cinzel';
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    gap: 1em;
+}
+
+.unit-details__button-wrapper {
+    display: flex;
+    gap: 2em
+}
